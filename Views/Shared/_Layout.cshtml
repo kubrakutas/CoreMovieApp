@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <title>_Layout</title>
+</head>
+<body>
+    <header>
+        <partial name="_navbar">
+    </header>
+    <main>
+        <div class="container m-4">
+            @RenderBody()
+        </div>
+    </main>
+    <footer>
+        <partial name="_footer">
+    </footer>
+</body>
+</html>
